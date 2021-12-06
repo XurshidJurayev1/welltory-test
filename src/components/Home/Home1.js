@@ -4,7 +4,6 @@ import logo from '../../assets/image/image 86.png';
 
 const Home1 = () => {
   const [click, setClick] = useState(true);
-  console.log(click);
   return (
     <div className={style.main}>
       <div className={style.inMain}>
