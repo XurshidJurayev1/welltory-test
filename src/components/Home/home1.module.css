@@ -1,0 +1,303 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.inMain {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.inMain img {
+    width: 230px;
+    height: 90px;
+}
+
+.inMain h2 {
+    font-size: 37px;
+    line-height: 40px;
+    font-weight: 300;
+    padding: 20px 0
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 325px;
+    height: 190px;
+    background: rgba(51, 59, 74, 0.2);
+    border-radius: 4px;
+    position: relative;
+    transition: all 1s ease;
+
+}
+
+.card .sale {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 38px;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    left: 28px;
+    top: -6px;
+    background: #89A3FF;
+    font-size: 19px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.card .sale span {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 6px;
+    height: 6px;
+    background: #89A3FF;
+    opacity: 0.4;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+    margin: 20px 0 30px 0;
+}
+
+.flex .name {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-left: 32px;
+}
+
+.flex .price {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+}
+
+.flex .price p:nth-child(1) {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #89A3FF;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.flex .price p:nth-child(2) {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-decoration-line: line-through;
+    color: #C0C3CD;
+    opacity: 0.5;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.card .billed {
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 32px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.activeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 325px;
+    height: 190px;
+    background: rgba(51, 59, 74, 0.2);
+    border-radius: 4px;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.activeCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 4px;
+    padding: 1px;
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.activeCard .sale {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 38px;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    left: 28px;
+    top: -6px;
+    background: #EFDD36;
+    font-size: 19px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.activeCard .sale span {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 6px;
+    height: 6px;
+    background: #EFDD36;
+    opacity: 0.4;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.activeCard .flex .price p:nth-child(1) {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #EFDD36;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.activeCard .billed {
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-left: 32px;
+}
+
+.inMain button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 337px;
+    height: 48px;
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 13.2985px 26.5969px rgba(255, 0, 63, 0.2);
+    border-radius: 5px;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #151A22;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.inMain button:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+.inMain .commit {
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 13px;
+}
+
+@media screen and (max-width: 762px) {
+    .inMain {
+        max-width: none;
+        width: 90%;
+    }
+
+    .cards {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .flex {
+        margin: 15px 0 0 0;
+    }
+
+    .card {
+        height: 120px;
+        margin: 25px 0 0 0;
+    }
+
+
+    .activeCard {
+        height: 120px;
+        margin: 25px 0 0 0;
+    }
+
+    .inMain button {
+        margin-top: 30px;
+    }
+
+    .inMain img {
+        display: none;
+    }
+
+    .inMain h2 {
+        font-size: 27px;
+
+    }
+}

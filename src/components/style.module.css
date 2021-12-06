@@ -1,0 +1,165 @@
+/* NAVBAR */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.inMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 65px;
+}
+
+.inMain img {
+    width: 170px;
+    height: 40px;
+
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat, sans-serif;
+}
+
+.footerIn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin-bottom: 60px;
+}
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile p {
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    color: #78757A;
+    margin-right: 20px;
+    margin-top: 13px;
+}
+
+.mobile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile a {
+    margin-right: 10px;
+}
+
+.policy p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #78757A;
+    margin-right: 20px;
+    margin-top: 13px;
+}
+
+.policy a {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #78757A;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 13px;
+    text-decoration: none;
+}
+
+.policy a:hover {
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin-left: 25px;
+
+}
+
+.links a svg {
+    color: #78757A;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+
+}
+
+.links a svg:hover {
+    color: #ffffff;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .footerIn {
+        width: 100%;
+    }
+
+    .download {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .footerIn {
+        flex-direction: column;
+    }
+
+    .mobile {
+        flex-direction: column;
+    }
+
+    .mobile div {
+        margin: 15px 0 50px 0;
+    }
+
+    .links {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
