@@ -1,15 +1,15 @@
-import React from 'react'
-import style from './blik.module.css'
+import React from 'react';
+import style from './blik.module.css';
 
 const Blik = () => {
   return (
     <div className={style.main}>
-        <div className={style.one} ></div>
-        <div className={style.two} ></div>
-        <div className={style.three} ></div>
+      <div className={style.one} />
+      <div className={style.two} />
+      <div className={style.three} />
 
     </div>
-  )
-}
+  );
+};
 
-export default Blik
+export default Blik;

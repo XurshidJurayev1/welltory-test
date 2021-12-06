@@ -9,40 +9,43 @@
 
 
 /* blik */
+.main {
+
+}
 
 .one {
     position: absolute;
     width: 100px;
-    height: 123.92px;
-    left: 59.92px;
-    top: 426.79px;
+    height: 124px;
+    left: 60px;
+    top: 427px;
     background: #89A3FF;
     opacity: 0.2;
-    filter: blur(35.0779px);
+    filter: blur(35px);
     transform: rotate(90deg);
 }
 
 .two {
     position: absolute;
-    width: 231.03px;
-    height: 286.29px;
-    left: 1925.18px;
-    top: 0px;
+    width: 231px;
+    height: 286px;
+    left: 1925px;
+    top: 0;
     background: #03CB34;
     opacity: 0.4;
-    filter: blur(61.3863px);
+    filter: blur(61px);
     transform: rotate(90deg);
 }
 
 .three {
     position: absolute;
-    width: 728.55px;
-    height: 902.83px;
-    left: 1728.17px;
-    top: 618.95px;
+    width: 729px;
+    height: 903px;
+    left: 1728px;
+    top: 619px;
     background: #FF6060;
     opacity: 0.46;
-    filter: blur(175.389px);
+    filter: blur(175px);
     transform: matrix(0, 1, 1, 0, 0, 0);
 }
 

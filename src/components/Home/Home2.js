@@ -11,9 +11,9 @@ function Home2() {
       <div className={style.inMain}>
         <h2>Choose the best plan for you</h2>
         <div className={style.flex}>
-          <div className={style.inFlex}><p>What you get</p><span></span></div>
-          <div className={style.inFlex}><p>for free</p><span></span></div>
-          <div className={style.inFlex}><p>in Pro</p><span></span></div>
+          <div className={style.inFlex}><p>What you get</p><span /></div>
+          <div className={style.inFlex}><p>for free</p><span /></div>
+          <div className={style.inFlex}><p>in Pro</p><span /></div>
         </div>
         {
           json.map((card, index) => {
@@ -27,9 +27,9 @@ function Home2() {
                     return (
                       <div className={style.flex} key={index}>
                         <div className={style.inFlex}>{description.text}</div>
-                        <div className={style.inFlex}><img src={description.free ? yes : no} /></div>
-                        <div className={style.inFlex}><img src={description.pro ? yes : no} /></div>
-                        {description.border ? <span className={style.borderBottom}></span> : null}
+                        <div className={style.inFlex}><img src={description.free ? yes : no} alt="true" /></div>
+                        <div className={style.inFlex}><img src={description.pro ? yes : no} alt="true" /></div>
+                        {description.border ? <span className={style.borderBottom} /> : null}
                       </div>
                     );
                   })

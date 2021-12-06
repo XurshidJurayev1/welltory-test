@@ -171,6 +171,7 @@
     mask-composite: exclude;
 }
 
+
 .activeCard .sale {
     position: absolute;
     display: flex;

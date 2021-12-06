@@ -16,7 +16,7 @@ const Home1 = () => {
             className={click ? style.card : style.activeCard}
             // className={style.card}
             onClick={() => setClick(false)}>
-            <p className={style.sale}><span></span>– 15%</p>
+            <p className={style.sale}><span />– 15%</p>
             <div className={style.flex}>
               <div className={style.name}>
                 <p>Monthly</p>
@@ -31,7 +31,7 @@ const Home1 = () => {
           <div
             className={click ? style.activeCard : style.card}
             onClick={() => setClick(true)}>
-            <p className={style.sale}><span></span>– 25%</p>
+            <p className={style.sale}><span />– 25%</p>
             <div className={style.flex}>
               <div className={style.name}>
                 <p>Annual</p>
