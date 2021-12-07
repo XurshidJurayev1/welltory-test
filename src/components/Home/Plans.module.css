@@ -1,0 +1,236 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    max-width: 794px;
+}
+
+.container h2 {
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 50px;
+}
+
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.map h3 {
+    font-size: 22px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    mix-blend-mode: normal;
+    text-shadow: 0 13px 27px rgba(255, 0, 63, 0.2);
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 46px;
+    margin-bottom: 26px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    padding: 16px 0;
+}
+
+.borderBottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0.7;
+    width: 100%;
+}
+
+.inFlex {
+    font-size: 22px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    left: 0;
+
+}
+
+.inFlex:nth-child(1) {
+    text-align: left;
+    width: 406px;
+}
+
+.inFlex:nth-child(2) {
+    width: 123px;
+
+}
+
+.inFlex:nth-child(3) {
+    width: 123px;
+
+}
+
+.inFlex p {
+    padding: 15px;
+}
+
+.inFlex:nth-child(1) span {
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0.7;
+    width: 100%;
+
+}
+
+.inFlex:nth-child(2) span {
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0.7;
+    width: 100%;
+}
+
+.inFlex:nth-child(3) span {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+}
+
+.map .inFlex {
+    font-size: 15px;
+    align-items: center;
+}
+
+.inFlex img {
+    width: 40px;
+    height: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 200px;
+}
+
+.buttons button:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 48px;
+    border: 1px solid #3D3E47;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.buttons button:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 48px;
+    mix-blend-mode: normal;
+    box-shadow: 0 13px 27px rgba(255, 0, 63, 0.2);
+    border-radius: 5px;
+    font-size: 19px;
+    line-height: 22px;
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #151A22;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.container button:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+@media screen and (max-width: 762px) {
+    .main {
+        margin-top: 48px;
+    }
+
+    .container {
+        max-width: none;
+    }
+
+    .flex {
+        width: 95%;
+    }
+    .inFlex:nth-child(1) {
+        width: 199px;
+        padding: 0 25px;
+    }
+    .map .flex .inFlex:nth-child(1){
+        padding: 0;
+    }
+
+    .inFlex:nth-child(2) {
+        width: 56px;
+    }
+
+    .inFlex:nth-child(3) {
+        width: 56px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button:nth-child(1) {
+        margin-bottom: 30px
+    }
+}

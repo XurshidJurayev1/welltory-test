@@ -5,7 +5,7 @@ import logo from '../assets/image/welltory.png'
 const Navbar = () => {
   return (
     <div className={style.main}>
-      <div className={style.inMain}>
+      <div className={style.container}>
         <img alt='image' src={logo} />
       </div>
 

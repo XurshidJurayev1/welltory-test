@@ -8,7 +8,7 @@
 
 }
 
-.container {
+.container{
     max-width: 794px;
     display: flex;
     flex-direction: column;
@@ -132,9 +132,6 @@
 }
 
 .card .billed {
-    position: absolute;
-    left: 0;
-    bottom: 24px;
     font-size: 12px;
     line-height: 18px;
     display: flex;
@@ -216,9 +213,6 @@
 }
 
 .activeCard .billed {
-    position: absolute;
-    left: 0;
-    bottom: 24px;
     font-size: 12px;
     line-height: 18px;
     display: flex;
@@ -279,17 +273,17 @@
     }
 
     .flex {
-        margin: 35px 0 0 0;
+        margin: 15px 0 0 0;
     }
 
     .card {
-        height: 132px;
+        height: 120px;
         margin: 25px 0 0 0;
     }
 
 
     .activeCard {
-        height: 132px;
+        height: 120px;
         margin: 25px 0 0 0;
     }
 

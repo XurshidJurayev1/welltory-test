@@ -9,7 +9,7 @@
     height: 100%;
 }
 
-.inMain {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
     height: 65px;
 }
 
-.inMain img {
+.container img {
     width: 170px;
     height: 40px;
 
@@ -38,7 +38,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 65%;
     height: 100%;
     margin-bottom: 60px;
 }
